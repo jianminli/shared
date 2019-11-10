@@ -1,0 +1,22 @@
+server:
+  port: 10041
+  servlet:
+    context-path: /demoNew
+
+openapi:
+
+ # secretId: myh001   # secretId
+ # secretKey: Gvdnuc1YHIDEHPR6iSb4zWg+AbmDXpsQ
+  secretId: RCMB001   # secretId
+  secretKey: uqtJ+OPVUmRM+B/fUr89+HWwKYkT1Wtb
+
+  publicKey:
+  #restURL: http://10.6.100.1/openapi/queryData/  # queryUri
+  restURL:  https://10.6.140.2/openapi/queryData/ # queryUri
+  responseCode: $.head.responseCode
+  responseMsg: $.head.responseMsg
+  response: $.response  #FRAI0001
+
+
+logging:
+  config:classpath:log4j2-spring.xml
